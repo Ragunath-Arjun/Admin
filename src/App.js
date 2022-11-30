@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Sidebar from './Sidebar';
+import "./sb-admin-2.min.css";
+import Topbar from './Topbar';
+import Dashboard from './Dashboard';
+// import "./all.min.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="wrapper">
+      <Sidebar/>
+      <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+      <Topbar/>
+      <div class="container-fluid">
+
+      <Dashboard/>
+      </div>
+      </div>
+      </div>
     </div>
   );
 }
