@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Sidebar(){
     return (
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -12,12 +14,18 @@ export default function Sidebar(){
     <hr class="sidebar-divider my-0"/>
 
     <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <Link class="nav-link" to="/portal/dashboard">
             <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard</span></a>
+            <span>Dashboard</span></Link>
     </li>
 
-    <hr class="sidebar-divider"/>
+    <li class="nav-item active">
+        <Link class="nav-link" to="/portal/user-list">
+        <i class="fa-solid fa-users"></i>
+            <span>Users</span></Link>
+    </li>
+
+    {/* <hr class="sidebar-divider"/>
 
     <div class="sidebar-heading">
         Interface
@@ -104,7 +112,7 @@ export default function Sidebar(){
         <img class="sidebar-card-illustration mb-2" src="img/undraw_rocket.svg" alt="..."/>
         <p class="text-center mb-2"><strong>SB Admin Pro</strong> is packed with premium features, components, and more!</p>
         <a class="btn btn-success btn-sm" href="https://startbootstrap.com/theme/sb-admin-pro">Upgrade to Pro!</a>
-    </div>
+    </div> */}
 
 </ul>
     )

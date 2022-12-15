@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Topbar() {
   return (
@@ -159,12 +160,12 @@ function Topbar() {
                         <div class="topbar-divider d-none d-sm-block"></div>
 
                         <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                            <Link class="nav-link dropdown-toggle" to="/" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
                                 <img class="img-profile rounded-circle"
                                     src="https://startbootstrap.github.io/startbootstrap-sb-admin-2/img/undraw_profile.svg"/>
-                            </a>
+                            </Link>
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
